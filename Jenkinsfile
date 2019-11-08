@@ -3,7 +3,7 @@ pipeline {
     disableConcurrentBuilds()
   }
   agent {
-    label "jenkins-maven"
+    label "jenkins"
   }
   environment {
     DEPLOY_NAMESPACE = "jx-staging"
