@@ -12,9 +12,9 @@ pipeline {
     stage('Validate Environment') {
       steps {
         container('jx-base') {
-       
+       dir('env') {
             sh 'jx step helm build'
-       
+       }
         }
       }
     }
