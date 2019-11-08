@@ -14,7 +14,6 @@ pipeline {
         container('maven') {
         dir('env') {
             sh 'jx step helm build'
-            sh 'sleep 120'
           }
         }
       }
