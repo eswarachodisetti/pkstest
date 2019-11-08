@@ -13,7 +13,7 @@ pipeline {
       steps {
         container('maven') {
 
-            sh 'jx step helm build'
+            sh 'jx step kubectl get pods'
           
         }
       }
