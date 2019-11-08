@@ -3,7 +3,7 @@ pipeline {
     disableConcurrentBuilds()
   }
   agent {
-    label "pkstest"
+    label "jenkins-maven"
   }
   environment {
     DEPLOY_NAMESPACE = "jx-staging"
