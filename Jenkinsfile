@@ -11,10 +11,10 @@ pipeline {
   stages {
     stage('Validate Environment') {
       steps {
-        container('pkstest') {
-          dir('env') {
+        container('maven') {
+
             sh 'jx step helm build'
-          }
+          
         }
       }
     }
